@@ -5,10 +5,6 @@ type Trie struct {
 	isEnd bool
 }
 
-func Constructor() Trie {
-	return Trie{}
-}
-
 func (this *Trie) Insert(word string) {
 	cur := this
 	for _, w := range word {
