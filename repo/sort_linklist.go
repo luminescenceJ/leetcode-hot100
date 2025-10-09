@@ -8,7 +8,7 @@ func sortList(head *ListNode) *ListNode {
 	start, mid := divide(head)
 	start = sortList(start)
 	mid = sortList(mid)
-	return merge(start, mid)
+	return mergeList(start, mid)
 }
 
 func divide(head *ListNode) (*ListNode, *ListNode) {
@@ -28,7 +28,7 @@ func divide(head *ListNode) (*ListNode, *ListNode) {
 	return head, slow
 }
 
-func merge(h1, h2 *ListNode) *ListNode {
+func mergeList(h1, h2 *ListNode) *ListNode {
 	dummy := &ListNode{}
 	cur := dummy
 	for h1 != nil && h2 != nil {
