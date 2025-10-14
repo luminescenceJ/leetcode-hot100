@@ -1,6 +1,6 @@
 package repo
 
-var arr = [][]byte{
+var arr_ = [][]byte{
 	[]byte{},
 	[]byte{},
 	[]byte{'a', 'b', 'c'},
@@ -29,7 +29,7 @@ func letterCombinations(digits string) []string {
 			res = append(res, string(curCh))
 			return
 		}
-		for _, ch := range arr[nums[index]] {
+		for _, ch := range arr_[nums[index]] {
 			curCh = append(curCh, ch)
 			dfs(index + 1)
 			curCh = curCh[:len(curCh)-1]

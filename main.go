@@ -1,8 +1,9 @@
 package main
 
-import "leetcode/repo"
+import "leetcode/structure"
 
 func main() {
 	//repo.TestisPalindrome()
-	repo.TestMinWindows()
+	//repo.TestMinWindows()
+	structure.TestBinarySearch()
 }
